@@ -1,1 +1,20 @@
-<button class="btn btn-default">hello world</div>
+<button class="btn btn-default">hello world</button>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-resiponsive">
+            <thead>
+                <th>No.</th>
+                <th>Email</th>
+                <th>Role</th>
+            </thead>
+            <tbody>
+                <% @users.each do |user| %>
+                    <td><%=user.id%></td>
+                    <td><%=user.email%></td>
+                    <td><%=user.role%></td>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+</div>
